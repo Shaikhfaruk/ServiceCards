@@ -1,0 +1,63 @@
+/* Roboto font */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+}
+.serviceCards_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+.serviceCards_container .serviceCards_card {
+  width: calc(50% - 20px);
+  margin: 15px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  max-width: 300px;
+}
+.serviceCards_card_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.serviceCards_card_description {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.serviceCards_container .serviceCards_card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.serviceCards_container .serviceCards_card:hover .serviceCard_title {
+  color: #000;
+}
+.serviceCards_container .serviceCards_card:hover .serviceCard_description {
+  color: #000;
+}
+
+.serviceCards_card_image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.serviceCards_card_image img {
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.serviceCards_container .serviceCards_card:hover .serviceCards_card_image img {
+  opacity: 0.3;
+}
