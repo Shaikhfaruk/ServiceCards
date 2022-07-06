@@ -61,3 +61,14 @@ body {
 .serviceCards_container .serviceCards_card:hover .serviceCards_card_image img {
   opacity: 0.3;
 }
+@media screen and (max-width: 768px) {
+  .serviceCards_container .serviceCards_card {
+    width: calc(100% - 20px);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .serviceCards_container .serviceCards_card {
+    width: 100%;
+  }
+}
